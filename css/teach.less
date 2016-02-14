@@ -1,0 +1,57 @@
+.opportunity {
+	.border-radius;
+	display: block;
+	background: @darkblue no-repeat center;
+	background-size: cover;
+	color: white;
+	margin-bottom: 20px;
+	position: relative;
+	padding-bottom: 100px;
+	height: 230px;
+
+	h5 {
+		font-size: 24px;
+		font-weight: bold;
+		padding: 40px 40px 25px;
+	}
+
+	p {
+		padding: 0 40px;
+	}
+
+	.button {
+		font-size: 14px;
+		padding: 12px 20px;
+		position: absolute;
+		bottom: 35px;
+		left: 40px;
+	}
+
+	&.opportunity1 {
+		background-image: url('../img/opportunity1.jpg');
+	}
+	&.opportunity2 {
+		background-image: url('../img/opportunity2.jpg');
+	}
+	&.opportunity3 {
+		background-image: url('../img/opportunity3.jpg');
+	}
+	&.opportunity4 {
+		background-image: url('../img/opportunity4.jpg');
+	}
+}
+
+.opportunities {
+	overflow: hidden;
+	margin: 15px 0;
+
+	li {
+		float: left;
+		width: 460px;
+		margin-right: 20px;
+
+		&:nth-child(2n) {
+			margin-right: 0;
+		}
+	}
+}

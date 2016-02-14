@@ -1,0 +1,402 @@
+body, html {
+	height: 100%;
+}
+
+.profile-page {
+	height: 100%;
+
+	.profile-content {
+		margin-bottom: -98px;
+		min-height: 100%;
+	}	
+
+	footer {
+		height: 98px;
+	}
+
+	.buffer {
+		height: 100px;
+	}
+}
+
+
+
+.page-title-reg {
+	margin-bottom: 36px;
+	color: #282d3a;
+	font-weight: bold;
+	font-size: 24px;
+	font-family: "Intro Book";
+	line-height: 32px;
+}
+
+.reg-bottom-row {
+	margin-top: 33px;
+}
+
+.profile-type-select-container {
+	overflow: hidden;
+	margin-bottom: 42px;
+	border-radius: 5px;
+}
+
+.profile-type-select {
+	display: table;
+	width: 100%;
+}
+
+a.profile-type-select__item {
+	display: table-cell;
+	width: 33%;
+	height: 52px;
+	border-right: 1px solid #dee3e5;
+	background: #edf1f3;
+	color: #a2a9ad;
+	vertical-align: middle;
+	text-align: center;
+	font-weight: bold;
+	font-size: 14px;
+	font-family: "Intro Book";
+
+	&:hover {
+		background: #d9e3e8;	
+		color: #a2a9ad;
+	}
+
+	&.cur {
+		background: #00b7f4;
+		color: #fff;
+	}
+}
+
+
+/**/
+
+.control-row {
+	label {
+		display: block;
+		margin-bottom: 14px;
+		color: #282d3a;
+		font-size: 14px;
+		font-family: "Intro Book";
+		line-height: 20px;
+	}
+
+	input[type=text], input[type=password], textarea {
+		display: block;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		margin-top: 8px;
+		padding: 9px 13px 11px;
+		width: 100%;
+		outline: none;
+		border: 1px solid #dbdcdd;
+		border-radius: 3px;
+		background: #edf1f3;
+		color: #282d3a;
+		font-weight: bold;
+		font-size: 14px;
+		font-family: "Intro Book";
+
+		&:focus {
+			border-color: #00b7f4;
+		}
+	}
+
+	&.short {
+		width: 50%;
+	}
+
+
+	&.control-row-foto label {
+		position: relative;
+		display: block;
+
+		&:after {
+			position: relative;
+			display: block;
+			margin-top: 20px;
+			width: 260px;	
+			height: 260px;
+			background: url(../img/human_add.png) center 0px no-repeat;
+			content: '';
+		}
+	}
+
+	&.control-row-docs label {
+		position: relative;
+		display: block;
+		margin-left: -20px;
+
+		&:after {
+			position: relative;
+			display: block;
+			margin-top: 20px;
+			width: 260px;	
+			height: 260px;
+			background: url(../img/human_docs.png) center 0px no-repeat;
+			content: '';
+		}		
+	}
+}
+
+.reg-bottom-row {
+	textarea {
+		height: 119px;
+	}
+}
+
+p.label-descr {
+	margin-top: 24px;
+	margin-bottom: 24px;
+	color: #939b9f;
+	font-size: 14px;
+	font-family: "Intro Book";
+
+	b {
+		color: #282d3a;
+	}
+}
+
+/**/
+
+.reg-entrance-row {
+	margin-top: 37px;
+	padding-top: 33px;
+	border-top: 1px solid #dbdcdd;
+	color: #abb9be;
+	font-family: "Intro Book";
+
+	input[type=submit] {
+		display: inline-block;
+		margin-right: 20px;
+		padding: 0 13px;
+		height: 32px;
+		outline: none;
+		border: none;
+		border-radius: 5px;
+		background: #282d3a;
+		color: #fff;
+		font-weight: bold;
+		font-size: 14px;
+		font-family: "Intro Book";
+	}
+
+	a.reg-link-entrance {
+		color: #282d3a;
+		font-weight: bold;
+	}
+}
+
+.variant-entrance-label {
+	display: table;
+	width: 100%;
+	
+	
+	text-align: center;
+
+	.variant-entrance-label-content {
+		display: table-cell;
+		height: 225px;
+		color: #282d3a;
+		vertical-align: middle;
+		font-family: "Intro Book";
+
+		b {
+			display: inline-block;
+			margin-bottom: 16px;
+			font-size: 24px;
+		}
+	}
+}
+
+.social-buttons {
+	margin-top: 28px;
+}
+
+a.btn-social {
+	display: block;
+	margin-bottom: 11px;
+	width: 100%;
+	height: 32px;
+	border-radius: 3px;
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+	font-family: "Intro Book";
+	line-height: 32px;
+	
+	&:hover {
+		color: #fff;
+	}
+
+	&:before {
+		position: relative;
+		display: inline-block;
+		margin-right: 8px;
+		background: url(../img/ico-soc.png) 0 0 no-repeat;
+		content: '';
+
+	}
+
+	&.btn-tw {
+		background-color: #29c5f6;
+
+		&:before {
+			top: 4px;
+			width: 13px;
+			height: 16px;
+			background-position: 0 0;
+		}
+	}
+	&.btn-fb {
+		background-color: #6788ce;
+
+		&:before {
+			top: 3px;
+			width: 13px;
+			height: 14px;
+			background-position: 0 bottom;
+		}		
+	}
+	&.btn-ok {
+		background-color: #e87817;
+
+		&:before {
+			top: 3px;
+			width: 11px;
+			height: 16px;
+			background-position: right top;
+		}				
+	}
+	&.btn-vk {
+		background-color: #3e77b8;
+
+		&:before {
+			top: 2px;
+			width: 11px;
+			height: 12px;
+			background-position: right bottom;
+		}			
+	}
+}
+
+
+
+
+
+.tzSelect{
+	position:relative;
+	z-index: 100;
+	margin:0px;
+
+}
+
+.tzSelectBox {
+	position:relative;
+	z-index: 100;
+	display:inline-block;
+	margin:0px;
+	width: 100% !important;
+	height:39px;
+}
+
+.tzSelect .selectBox{
+	position:absolute;
+		display: block;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	
+
+		margin-top: 8px;
+		padding: 9px 13px 11px;
+	width:100%;
+		width: 100%;
+	height:100%;
+		outline: none;
+		border: 1px solid #dbdcdd;
+		border-radius: 3px;
+		background: #edf1f3;
+		color: #282d3a;
+		font-weight: bold;
+		font-size: 14px;
+		font-family: "Intro Book";
+	cursor:pointer;	
+
+	&:before {
+		position: absolute;
+		top: 50%;
+		right: 10px;
+		z-index: 102;
+		display: block;
+		margin-top: -3px;
+		width: 12px;
+		height: 6px;
+		background: url(../img/select-arr.png) 0 0 no-repeat;
+		content: '';
+	}
+
+}
+
+.tzSelect .dropDown{
+	position:absolute;
+	top:40px;
+	left:0;
+	z-index:1000;
+	-webkit-box-sizing:border-box;
+	
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	width:100%;
+	border:1px solid #32333b;
+	-webkit-box-shadow:0 0 4px #111;
+	
+	-moz-box-shadow:0 0 4px #111;
+	box-shadow:0 0 4px #111;
+	list-style:none;
+
+
+}
+
+.tzSelect li{
+	padding:6px;
+	background-color: #edf1f3;
+	text-align:center;
+	
+	cursor:pointer;
+}
+
+.tzSelect li:hover{
+	background-color:#d9e3e8;
+}
+
+.tzSelect .hasDetails{
+	position: absolute;
+	top: 43px;
+	left: 0;
+	z-index: -1;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	border: 1px solid #dbdcdd;
+	border-radius: 5px;
+
+
+}
+
+.tzSelect .hasDetails li{
+	position:relative;
+	z-index: 100;
+	padding:0;
+	padding: 8px 15px 10px;
+	text-align:left;
+	font-weight: bold;
+	font-size: 14px;
+	font-family: "Intro Book";
+	cursor: hand;
+	cursor: pointer;		
+}
+

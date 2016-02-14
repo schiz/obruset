@@ -1,0 +1,145 @@
+.snippet {
+	.border-radius;
+	background: @silver;
+	display: inline-block;
+	padding-bottom: 25px;
+	margin-bottom: 25px;
+
+	img {
+		display: block;
+		max-width: 100%;
+		margin-bottom: 20px;
+	}
+
+	h5,
+	p {
+		margin: 0 20px;
+	}
+
+	h5 {
+		font-weight: bold;
+		margin-bottom: 10px;
+		position: relative;
+	}
+
+	p {
+		color: #53656c;
+	}
+
+	&.video h5:before,
+	&.article h5:before {
+		.transition;
+		position: absolute;
+		content: ' ';
+		width: 60px;
+		height: 30px;
+		background: fade(black, 60%) no-repeat center;
+		right: -20px;
+		top: -50px;
+		border-radius: 7px 0 0 0;
+	}
+
+	&.video h5:before {
+		background-image: url('../img/video-white.png');
+	}
+
+	&.article h5:before {
+		background-image: url('../img/read-white.png');
+	}
+
+	&:hover h5:before {
+		background-color: fade(@lightblue, 60%);
+	}
+}
+
+.level {
+	.border-radius;
+	display: block;
+	border: 1px solid #dbdcdd;
+	text-align: center;
+
+	h5,
+	big {
+		font-weight: bold;
+		font-size: 16px;
+		padding: 15px;		
+	}
+
+	h5 {
+		.border-radius-top;
+		background: @silver;
+	}
+
+	big {
+		.border-radius-bottom;
+		display: block;
+		background: @green;
+		color: white;
+
+		&:after {
+			content: ' →';
+		}
+	}
+
+	dl {
+		padding: 25px 35px 35px;
+
+		dt {
+			margin-top: 13px;
+			margin-bottom: 5px;
+		}
+
+		dd {
+			.border-radius;
+			border: 1px solid #c0c0c2;
+			margin-bottom: 10px;
+
+			span {
+				.border-radius-left;
+				display: block;
+				height: 23px;
+				background: @lightblue;
+			}
+		}
+	}
+
+	&.disabled {
+		cursor: default;
+		position: relative;
+
+		&:hover {
+			color: @darkblue;
+		}
+
+		&:before,
+		&:after {
+			.border-radius;
+			content: ' ';
+			display: block;
+			background: fade(@silver, 60%);
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+		}
+
+		&:after {
+			background: transparent;
+			content: 'Скоро';
+			top: 35%;
+			font-size: 42px;
+			font-weight: bold;
+			color: @green;
+			height: auto;
+		}
+
+		dd span {
+			background: @silver;
+		}
+
+		big {
+			background: @grey;
+		}
+	}
+}

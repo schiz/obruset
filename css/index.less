@@ -1,0 +1,60 @@
+.index-page {
+	section.intro {
+		.index1 {
+			background-image: url('../img/index1.jpg');
+		}
+		.index2 {
+			background-image: url('../img/index2.jpg');
+		}
+		.index3 {
+			background-image: url('../img/index3.jpg');
+		}
+		.index4 {
+			background-image: url('../img/index4.jpg');
+		}
+		.index5 {
+			background-image: url('../img/index5.jpg');
+		}
+		.index6 {
+			background-image: url('../img/index6.jpg');
+		}
+
+		.slide {
+			display: none;
+
+			&.active {
+				display: block;
+			}
+		}
+
+		.pager {
+			position: relative;
+			top: -170px;
+			height: 1px;
+			max-width: 940px;
+			text-align: right;
+			margin: 0 auto;
+			font-size: 0;
+
+			li {
+				display: inline-block;
+				cursor: pointer;
+			}
+
+			span {
+				.transition;
+				border-radius: 20px;
+				display: inline-block;
+				width: 17px;
+				height: 17px;
+				background: @darkblue;
+				margin: 4px;
+
+				&:hover,
+				&.active {
+					background: @lightblue;
+				}
+			}
+		}
+	}
+}

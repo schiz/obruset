@@ -1,0 +1,121 @@
+.learn-page {
+
+	section {
+		&.invert {
+			background: @silver;
+			color: white;
+
+			h2 {
+				color: inherit;
+			}
+		}
+
+		.center {
+			padding-top: 90px;
+			padding-bottom: 125px;
+		}
+
+		.bg {
+			max-width: 1420px;
+			margin: 0 auto;
+			background: @darkblue no-repeat center;
+			background-size: cover;
+		}
+
+		.labeled {
+			position: relative;
+			margin-right: 320px;
+
+			.pushkin {
+				position: absolute;
+				right: -330px;
+				top: 12px;
+				width: 180px;
+				padding-top: 1em;
+
+				&:before {
+					content: ' ';
+					display: inline-block;
+					width: 90px;
+					height: 87px;
+					background: url('../img/pushkin.png') no-repeat center;
+					position: absolute;
+					left: -110px;
+					top: 0;
+				}
+			}
+		}
+
+		&.intro {
+			.bg {
+				background-image: url('../img/intro.jpg');
+			}
+			.button {
+				margin-right: 25px;
+			}
+			h4 {
+				margin-bottom: 65px;
+			}
+		}
+
+		&.devices {
+			.bg {
+				background-image: url('../img/devices.jpg');
+			}
+
+			h2,
+			h4 {
+				margin-right: 300px;
+			}
+		}
+
+		&.start {
+			text-align: center;
+
+			h2 {
+				padding-left: 170px;
+				padding-right: 170px;
+			}
+
+			.bg {
+				background-image: url('../img/start.jpg');
+			}
+		}
+
+		&.features {
+			li {
+				min-height: 230px;
+				background: no-repeat left center;
+				background-size: 230px;
+				padding-left: 290px;
+				font-size: 16px;
+				margin-bottom: 50px;
+
+				&:nth-child(2n) {
+					background-position: right center;
+					padding-left: 0;
+					padding-right: 290px;
+				}
+
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+			}
+
+			h3 {
+				padding-top: 50px;
+			}
+
+			.illustration1 {
+				background-image: url('../img/illustration1.png');
+			}
+			.illustration2 {
+				background-image: url('../img/illustration2.png');
+			}
+			.illustration3 {
+				background-image: url('../img/illustration3.png');
+			}
+		}
+		
+	}
+}
